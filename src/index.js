@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { KandyKorner } from "./components/KandyKorner.js"
+import { KandyKorner } from "./components/KandyKorner"
 import reportWebVitals from './reportWebVitals';
-import { LocationList } from "./components/locations/LocationsList.js"
+
 
 
 ReactDOM.render(
     <React.StrictMode>
-      <LocationList />
+      <KandyKorner />
     </React.StrictMode>,
     document.getElementById('root')
   );
