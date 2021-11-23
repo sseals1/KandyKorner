@@ -6,7 +6,7 @@ export const NavBar = (props) => {
     return (
         <ul className="navbar">
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/location">Locations</Link>
+                <Link className="navbar__link" to="/">Locations</Link>
                 {/*this is how the links on the nav bar are created. give it a className for css and set the li that the link is wrapped in to "active"*/}
             </li>
 
@@ -17,6 +17,16 @@ export const NavBar = (props) => {
 
             <li className="navbar__item ">
                 <Link className="navbar__link" to="/customers">Customers</Link>
+            </li>
+
+            <li className="navbar__item ">
+                <Link className="navbar__link" to="productLocations?_expand=productId">Purchase Options</Link>
+            </li>
+            <li className="navbar__item ">
+                <Link className="navbar__link" to="purchases">My Orders</Link>
+            </li>
+            <li className="navbar__item ">
+                <Link className="navbar__link" to="employees">Employees</Link>
             </li>
             
 

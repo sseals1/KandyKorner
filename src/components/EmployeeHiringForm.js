@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom";
 import "./EmployeeHiringForm.css"
-import { Link } from "react-router-dom"
+
 
 
 
@@ -50,14 +50,14 @@ export const HiringEmployeeForm = () => {
                 history.push("/employees") //the history method is used to rerender the employees to the DOM
                 //creating the change in views using the history mechanism.
             })
-            
 
-        }
+
+    }
 
 
 
     return (
-        
+
         <form className="employeeForm">
             <h2 className="employeeForm__title">Kandy Korner New Employee</h2>
             <fieldset>
@@ -86,6 +86,7 @@ export const HiringEmployeeForm = () => {
 
                 <div className="form-group">
                     <label htmlFor="location">Location:</label>
+                    
                     <input
                         onChange={
                             (event) => {
@@ -179,9 +180,9 @@ export const HiringEmployeeForm = () => {
             <button className="btn btn-primary" onClick={saveEmployee}>
                 Finish Hiring
             </button>
-            
+
         </form>
-        
+
     )
-    
+
 }
